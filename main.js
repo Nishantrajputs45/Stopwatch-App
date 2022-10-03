@@ -10,6 +10,10 @@ let hour = 0;
 let setIntervalValue;
 
 function startStopWatch() {
+  milliSecond = 0;
+  second = 0;
+  minute = 0;
+  hour = 0;
   setIntervalValue = setInterval(() => {
     milliSecond = milliSecond + 1;
     if (milliSecond === 100) {
@@ -44,5 +48,18 @@ function startStopWatch() {
 }
 
 function stopStopWatch() {
+  clearInterval(setIntervalValue);
+}
+
+function resetStopWatch() {
+  milliSecond = "00";
+  second = "00";
+  minute = "00";
+  hour = "00";
+
+  msVale.innerText = milliSecond;
+  secondVale.innerText = second;
+  minuteVale.innerText = minute;
+  hourVale.innerText = hour;
   clearInterval(setIntervalValue);
 }
