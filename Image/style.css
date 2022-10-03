@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #50dbb4;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+}
+.header h1 {
+  color: #b4161b;
+  font-size: 120px;
+}
+
+.timer {
+  display: flex;
+  padding: 3rem 2rem;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  font-size: 40px;
+}
+.time_value {
+  background-color: #ffffff;
+  color: #5a20cb;
+  text-align: center;
+  width: 5rem;
+  align-self: center;
+}
+.timerName {
+  padding: 2rem 0rem;
+  color: #e03b8b;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.reset {
+  padding: 1rem;
+  background-color: #edc126;
+  color: #ffffff;
+  font-size: 30px;
+  border: none;
+  border-radius: 30%;
+}
+
+.reset:hover {
+  background-color: #120e43;
+}
+.start {
+  padding: 1rem;
+  background-color: #4dd637;
+  color: #ffffff;
+  font-size: 30px;
+  border: none;
+  border-radius: 30%;
+}
+.start:hover {
+  background-color: #120e43;
+}
+.stop {
+  padding: 1rem;
+  background-color: #e21717;
+  color: #ffffff;
+  font-size: 30px;
+  border: none;
+  border-radius: 30%;
+}
+.stop:hover {
+  background-color: #120e43;
+}

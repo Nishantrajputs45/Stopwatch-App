@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>STOPWATCHAPP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>STOP WATCH</h1>
+        <div class="timer">
+          <div class="time hour">
+            <div class="time_value" id="hourVale">00</div>
+            <div class="timerName">hour</div>
+          </div>
+          <div class="time minute">
+            <div class="time_value" id="minuteVale">00</div>
+            <div class="timerName">minute</div>
+          </div>
+          <div class="time second">
+            <div class="time_value" id="secondVale">00</div>
+            <div class="timerName">second</div>
+          </div>
+          <div class="time milliSecond">
+            <div class="time_value" id="msVale">000</div>
+            <div class="timerName">millisecond</div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="reset" onclick="resetStopWatch()">reset</button>
+        <button class="start" onclick="startStopWatch()">start</button>
+        <button class="stop" onclick="stopStopWatch()">stop</button>
+      </div>
+    </div>
+  </body>
+</html>
