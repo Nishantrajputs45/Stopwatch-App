@@ -42,3 +42,7 @@ function startStopWatch() {
     }
   }, 10);
 }
+
+function stopStopWatch() {
+  clearInterval(setIntervalValue);
+}
